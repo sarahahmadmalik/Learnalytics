@@ -31,12 +31,12 @@ const ReviewSlider = ({ reviews }) => {
         <div key={review.id} className="relative">
           <div className=" text-white py-6 px-4 mb-6  flex items-center justify-between">
             <div className="flex items-center">
-              <div className="rounded-full absolute z-10 left-0 top-[-50px] p-6 flex items-center justify-center border border-3-[#005B5C80]">
-                <div className="w-[300px] h-90 rounded-full ">
+              <div className="rounded-full hidden  absolute z-10 left-0 top-[-50px] p-6 lg:flex items-center justify-center border border-3-[#005B5C80]">
+                <div className="w-[300px] hidden lg:block h-90 rounded-full ">
                   <img src={review.image} alt="User" className="w-full h-full object-cover" />
                 </div>
               </div>
-              <div className="flex flex-col ml-[34%] 2xl:ml-[30%]">
+              <div className="flex flex-col  lg:ml-[34%] 2xl:ml-[30%]">
               <div className="flex justify-between">
                 <p className="text-[32px] font-[700]">{review.course}</p>
                 <div className="flex space-x-2 items-center">

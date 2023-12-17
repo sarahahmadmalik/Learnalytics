@@ -128,7 +128,7 @@ function Dashboard() {
   return(
     <div>
       <NavBar />
-      <div className="flex space-x-6 justify-center items-center mt-8">
+      <div className="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-8 justify-center items-center mt-8">
         {progresses.map((progress, index) => (
           <ProgressCard key={index} progress={progress} />
         ))}

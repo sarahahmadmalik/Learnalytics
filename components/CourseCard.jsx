@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Card({ imageUrl, heading, description, label, link }) {
   return (
-    <Link href={link} className="w-full max-w-sm mx-auto">
+    <Link href='/' className="w-full max-w-sm mx-auto">
   
         <div className="relative bg-white rounded-[24px] w-[230px] shadow-md overflow-hidden cursor-pointer transition-all duration-300 card-shadow hover:shadow-lg">
           {/* Card Image */}
